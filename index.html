@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógima — Aprenda Lógica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="cabecalho">
+      <div class="marca">
+        <div class="logo">L</div>
+
+        <div>
+          <h1>Lógima</h1>
+          <p>Seu assistente de lógica</p>
+        </div>
+      </div>
+
+      <button id="btnMaterias" class="btn-simples">
+        Matérias
+      </button>
+    </header>
+
+
+    <section class="sala">
+
+      <div class="titulo">
+        <span>LÓGIMA • MODO APRENDIZADO</span>
+
+        <h2>Converse com o Lógima</h2>
+
+        <p>
+          O conteúdo acontece através do personagem.
+          Clique nele para avançar.
+        </p>
+      </div>
+
+
+      <div class="cenario">
+
+        <div class="chao"></div>
+
+
+        <!-- PERSONAGEM -->
+        <button
+          id="logima"
+          class="logima"
+          aria-label="Clique no Lógima para continuar"
+        >
+
+          <span class="antena">
+            <i></i>
+          </span>
+
+          <span class="cabeca-robo">
+
+            <i class="olho esquerdo"></i>
+            <i class="olho direito"></i>
+
+            <i class="boca"></i>
+
+          </span>
+
+
+          <span class="corpo-robo">
+
+            <strong>LÓGIMA</strong>
+
+            <i class="led"></i>
+
+          </span>
+
+
+          <span class="braco esquerdo-braco"></span>
+          <span class="braco direito-braco"></span>
+
+          <span class="pe esquerdo-pe"></span>
+          <span class="pe direito-pe"></span>
+
+        </button>
+
+
+        <!-- CAIXA DE DIÁLOGO -->
+
+        <div id="dialogo" class="dialogo">
+
+          <div class="dialogo-topo">
+
+            <strong id="nomeFalante">
+              Lógima
+            </strong>
+
+            <span id="contador">
+              Clique no Lógima
+            </span>
+
+          </div>
+
+
+          <p id="fala">
+            Olá! Eu sou o Lógima.
+            Clique em mim e vou ensinar
+            Tabela-Verdade para você passo a passo.
+          </p>
+
+
+          <div class="dialogo-rodape">
+
+            <span id="dica">
+              👆 Clique no personagem para continuar
+            </span>
+
+            <button id="btnContinuar">
+              Continuar →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MATÉRIAS -->
+
+      <div id="materias" class="painel-materias escondido">
+
+        <h3>Escolha uma matéria</h3>
+
+        <p>
+          O Lógima vai conversar sobre o conteúdo escolhido.
+        </p>
+
+        <div id="listaMaterias"></div>
+
+      </div>
+
+
+      <!-- RESUMO -->
+
+      <div id="resumo" class="resumo escondido">
+
+        <h3>📘 O que aprendemos</h3>
+
+        <div id="resumoTexto"></div>
+
+        <button
+          id="btnRecomecar"
+          class="btn-principal"
+        >
+          Conversar novamente com o Lógima
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
