@@ -34,10 +34,8 @@ body {
   height: 72px;
   padding: 10px 7%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, .92);
-  border-bottom: 1px solid var(--borda);
+  gap: 12px;
 }
 
 .marca {
@@ -67,6 +65,7 @@ body {
 }
 
 .btn-simples {
+  margin-left: auto;
   border: 1px solid var(--borda);
   background: white;
   color: var(--texto);
