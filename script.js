@@ -1357,7 +1357,9 @@ mostrarFala(
     aulas[temaAtual][0]
 );
 
-// Modo Noturno
+
+
+// MODO NOTURNO
 
 const themeToggle = document.getElementById("theme-toggle");
 

@@ -595,50 +595,107 @@ body {
   }
 }
 
-/* Modo Noturno
-```css
-/* Botão do modo noturno */
+/* MODO NOTURNO */
+
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-
-    width: 45px;
-    height: 45px;
-
-    border: none;
-    border-radius: 50%;
-
-    background-color: #333;
-    color: white;
-
-    font-size: 20px;
-    cursor: pointer;
-
-    transition: 0.3s;
+  border: 1px solid var(--borda);
+  background: white;
+  color: var(--texto);
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .2s;
 }
 
 .theme-toggle:hover {
-    transform: scale(1.1);
+  border-color: var(--azul);
+  transform: scale(1.05);
 }
 
-/* Modo noturno */
+/* Quando o modo escuro estiver ativo */
 body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+  --fundo: #121722;
+  --texto: #f1f3f8;
+  --muted: #aeb6c7;
+  --branco: #1c2330;
+  --borda: #343d4f;
+
+  background:
+    radial-gradient(circle at 15% 20%, #202838 0, transparent 28%),
+    linear-gradient(135deg, #121722, #181e2b);
 }
 
-/* Exemplos de elementos no modo noturno */
-body.dark-mode header {
-    background-color: #1e1e1e;
+body.dark-mode .cabecalho {
+  background: rgba(28, 35, 48, .95);
 }
 
-body.dark-mode section {
-    background-color: #1e1e1e;
+body.dark-mode .btn-simples {
+  background: var(--branco);
+  color: var(--texto);
 }
 
+body.dark-mode .cenario {
+  background: linear-gradient(#1c2330 0 72%, #252c39 72% 100%);
+}
+
+body.dark-mode .cabeca-robo,
+body.dark-mode .corpo-robo {
+  background: #e9edf5;
+}
+
+body.dark-mode .dialogo,
+body.dark-mode .painel-materias,
+body.dark-mode .resumo {
+  background: var(--branco);
+  color: var(--texto);
+}
+
+body.dark-mode .dialogo::before {
+  background: var(--branco);
+}
+
+body.dark-mode #listaMaterias button {
+  background: #252d3c;
+  color: var(--texto);
+}
+
+body.dark-mode #listaMaterias button:hover:not(:disabled) {
+  background: #303a50;
+}
+
+body.dark-mode #listaMaterias button:disabled {
+  background: #202632;
+}
+
+body.dark-mode .tabela-dialogo {
+  background: #252d3c;
+  border-color: var(--borda);
+}
+
+body.dark-mode .tabela-dialogo th {
+  background: #303a50;
+}
+
+body.dark-mode .tabela-dialogo th,
+body.dark-mode .tabela-dialogo td {
+  border-color: var(--borda);
+}
+
+body.dark-mode .opcoes-dialogo button {
+  background: #252d3c;
+  color: var(--texto);
+  border-color: var(--borda);
+}
+
+body.dark-mode .opcoes-dialogo button:hover:not(:disabled) {
+  background: #303a50;
+}
+
+/* Botão no modo escuro */
 body.dark-mode .theme-toggle {
-    background-color: #f5f5f5;
-    color: #222;
+  background: #252d3c;
+  color: #ffffff;
 }
 
