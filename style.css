@@ -598,23 +598,23 @@ body {
 /* MODO NOTURNO */
 
 .theme-toggle {
-  border: 1px solid var(--borda);
-  background: white;
-  color: var(--texto);
   width: 42px;
   height: 42px;
-  border-radius: 9px;
+  border: 1px solid var(--borda);
+  border-radius: 50%;
+  background: white;
+  color: var(--texto);
   cursor: pointer;
   font-size: 18px;
   transition: .2s;
 }
 
 .theme-toggle:hover {
-  border-color: var(--azul);
   transform: scale(1.05);
+  border-color: var(--azul);
 }
 
-/* Quando o modo escuro estiver ativo */
+/* Modo escuro */
 body.dark-mode {
   --fundo: #121722;
   --texto: #f1f3f8;
@@ -622,80 +622,115 @@ body.dark-mode {
   --branco: #1c2330;
   --borda: #343d4f;
 
+  color: var(--texto);
+
   background:
     radial-gradient(circle at 15% 20%, #202838 0, transparent 28%),
     linear-gradient(135deg, #121722, #181e2b);
 }
 
+/* Cabeçalho */
 body.dark-mode .cabecalho {
-  background: rgba(28, 35, 48, .95);
+  background: #1c2330;
+  border-color: var(--borda);
 }
 
+/* Botão Matérias */
 body.dark-mode .btn-simples {
-  background: var(--branco);
-  color: var(--texto);
+  background: #252d3c;
+  color: #f1f3f8;
+  border-color: var(--borda);
 }
 
+/* Cenário */
 body.dark-mode .cenario {
-  background: linear-gradient(#1c2330 0 72%, #252c39 72% 100%);
+  background: linear-gradient(#202735 0 72%, #292f3b 72% 100%);
+  border-color: var(--borda);
 }
 
+/* Círculos do cenário */
+body.dark-mode .cenario::before,
+body.dark-mode .cenario::after {
+  border-color: #3a4355;
+}
+
+/* Sombra do chão */
+body.dark-mode .chao {
+  background: rgba(0, 0, 0, .25);
+}
+
+/* Robô */
 body.dark-mode .cabeca-robo,
 body.dark-mode .corpo-robo {
-  background: #e9edf5;
+  background: #f5f6fa;
 }
 
-body.dark-mode .dialogo,
-body.dark-mode .painel-materias,
-body.dark-mode .resumo {
-  background: var(--branco);
-  color: var(--texto);
+/* Caixa de diálogo */
+body.dark-mode .dialogo {
+  background: #1c2330;
+  border-color: #3a4355;
+  color: #f1f3f8;
 }
 
 body.dark-mode .dialogo::before {
-  background: var(--branco);
+  background: #1c2330;
+  border-color: #3a4355;
 }
 
+/* Painel de matérias */
+body.dark-mode .painel-materias {
+  background: #1c2330;
+  border-color: var(--borda);
+}
+
+/* Botões das matérias */
 body.dark-mode #listaMaterias button {
   background: #252d3c;
-  color: var(--texto);
+  color: #f1f3f8;
+  border-color: var(--borda);
 }
 
 body.dark-mode #listaMaterias button:hover:not(:disabled) {
-  background: #303a50;
+  background: #303a4e;
+  color: #ffffff;
 }
 
-body.dark-mode #listaMaterias button:disabled {
-  background: #202632;
+/* Resumo */
+body.dark-mode .resumo {
+  background: #1c2330;
+  border-color: var(--borda);
 }
 
+/* Tabela */
 body.dark-mode .tabela-dialogo {
   background: #252d3c;
   border-color: var(--borda);
 }
 
 body.dark-mode .tabela-dialogo th {
-  background: #303a50;
+  background: #303a4e;
 }
 
 body.dark-mode .tabela-dialogo th,
 body.dark-mode .tabela-dialogo td {
-  border-color: var(--borda);
+  border-color: #3a4355;
 }
 
+/* Opções do quiz */
 body.dark-mode .opcoes-dialogo button {
   background: #252d3c;
-  color: var(--texto);
+  color: #f1f3f8;
   border-color: var(--borda);
 }
 
 body.dark-mode .opcoes-dialogo button:hover:not(:disabled) {
-  background: #303a50;
+  background: #303a4e;
 }
 
-/* Botão no modo escuro */
+/* Botão do tema */
 body.dark-mode .theme-toggle {
   background: #252d3c;
   color: #ffffff;
+  border-color: #3a4355;
 }
 
