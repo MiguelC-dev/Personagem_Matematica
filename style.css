@@ -594,3 +594,51 @@ body {
     width: 100%;
   }
 }
+
+/* Modo Noturno
+```css
+/* Botão do modo noturno */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #333;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Modo noturno */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Exemplos de elementos no modo noturno */
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
