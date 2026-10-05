@@ -546,55 +546,6 @@ body {
   cursor: default;
 }
 
-/* RESPONSIVIDADE */
-
-@media (max-width: 700px) {
-  .cabecalho {
-    padding: 10px 5%;
-  }
-
-  .sala {
-    padding: 30px 12px;
-  }
-
-  .cenario {
-    min-height: 650px;
-    padding-bottom: 210px;
-  }
-
-  .logima {
-    transform: scale(.85);
-    margin-bottom: 30px;
-  }
-
-  .dialogo {
-    left: 4%;
-    right: 4%;
-    bottom: 20px;
-  }
-
-  .dialogo-rodape {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  #btnContinuar {
-    align-self: flex-end;
-  }
-
-  .tabela-dialogo {
-    font-size: .74rem;
-  }
-
-  #listaMaterias {
-    flex-direction: column;
-  }
-
-  #listaMaterias button {
-    width: 100%;
-  }
-}
-
 /* MODO NOTURNO */
 
 .theme-toggle {
@@ -732,5 +683,55 @@ body.dark-mode .theme-toggle {
   background: #252d3c;
   color: #ffffff;
   border-color: #3a4355;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+  .cabecalho {
+    padding: 10px 5%;
+  }
+
+  .sala {
+    padding: 30px 12px;
+  }
+
+  .cenario {
+    min-height: 650px;
+    padding-bottom: 210px;
+  }
+
+  .logima {
+    transform: scale(.85);
+    margin-bottom: 30px;
+  }
+
+  .dialogo {
+    left: 4%;
+    right: 4%;
+    bottom: 20px;
+  }
+
+  .dialogo-rodape {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #btnContinuar {
+    align-self: flex-end;
+  }
+
+  .tabela-dialogo {
+    font-size: .74rem;
+  }
+
+  #listaMaterias {
+    flex-direction: column;
+  }
+
+  #listaMaterias button {
+    width: 100%;
+  }
 }
 
